@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="OrangeHRM" verbose="1" parallel="methods" thread-count="2" >
+<test name="LoginTests" >
+  <parameter name="uname" value="Admin"/>
+  <parameter name="pword" value="admin123"/>
+ <parameter name="wrongUname" value="Admin1"/>
+   
+  <classes>
+    <class name="tests.LoginTests">
+      
+    </class>
+    
+  </classes>
+</test>
+</suite>
+
+

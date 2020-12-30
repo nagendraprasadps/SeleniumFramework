@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [OrangeHRM]">
+  <parameter name="wrongUname" value="wAdmin"/>
+  <parameter name="uname" value="Admin"/>
+  <parameter name="pword" value="admin123"/>
+  <test name="LoginTests(failed)">
+    <parameter name="wrongUname" value="wAdmin"/>
+    <parameter name="uname" value="Admin"/>
+    <parameter name="pword" value="admin123"/>
+    <classes>
+      <class name="tests.LoginTests">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="beforeSuite"/>
+          <include name="successfulLogin" invocation-numbers="0 0 0 0"/>
+        </methods>
+      </class> <!-- tests.LoginTests -->
+    </classes>
+  </test> <!-- LoginTests(failed) -->
+</suite> <!-- Failed suite [OrangeHRM] -->

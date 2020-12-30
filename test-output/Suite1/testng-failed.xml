@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite1]" parallel="methods">
+  <parameter name="wrongUname" value="Admin1"/>
+  <parameter name="uname" value="Admin"/>
+  <parameter name="pword" value="admin123"/>
+  <test name="Regression1(failed)" parallel="methods">
+    <parameter name="wrongUname" value="Admin1"/>
+    <parameter name="uname" value="Admin"/>
+    <parameter name="pword" value="admin123"/>
+    <classes>
+      <class name="tests.LoginTests">
+        <methods>
+          <include name="loginLogout" invocation-numbers="0"/>
+          <include name="beforeTest"/>
+          <include name="beforeSuite"/>
+          <include name="successfulLogin" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- tests.LoginTests -->
+    </classes>
+  </test> <!-- Regression1(failed) -->
+</suite> <!-- Failed suite [Suite1] -->
